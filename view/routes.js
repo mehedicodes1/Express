@@ -1,8 +1,11 @@
 import express from 'express';
-import { getAllEmp } from '../controller/userController.js';
+import { addEmp, getAllEmp } from '../controller/userController.js';
 
 const router = express.Router();
 
 router.get('/getall', getAllEmp);
+
+router.post('/add', addEmp);
+
 
 export default router;
